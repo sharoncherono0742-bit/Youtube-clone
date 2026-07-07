@@ -9,7 +9,7 @@
   left: 0;
   background-color: rgb(0, 0, 0);
   right: 0;
-  z-index: 100;
+  z-index: 110;
   gap: 10px;
 }
 
@@ -60,6 +60,12 @@
 .region {
   font-size: 10px;
   vertical-align: super;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu img {
@@ -114,5 +120,20 @@
 @media (max-width: 1000px) {
   .voice-search-button {
     display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .create-video,
+  .notification {
+    display: none;
+  }
+
+  .logo {
+    gap: 1px;
+  }
+
+  .left {
+    gap: 2px;
   }
 }
